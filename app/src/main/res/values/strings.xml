@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Desafio2</string>
+    <string name="StartSesion">Iniciar Sesión</string>
+    <string name="noCount">¿Todavía no tienes cuenta? Regístrat</string>
+    <string name="create">Estas a unos cuantos pasos de vivir la experiencia</string>
 </resources>

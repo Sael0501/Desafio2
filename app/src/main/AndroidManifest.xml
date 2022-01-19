@@ -10,9 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Desafio2">
         <activity
+            android:name=".DetallesLibros"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaPrincipal"
+            android:exported="false" />
+        <activity
             android:name=".Registro"
             android:exported="false"
-            android:parentActivityName=".Inicio"/>
+            android:parentActivityName=".Inicio" />
         <activity
             android:name=".Inicio"
             android:exported="false" />
