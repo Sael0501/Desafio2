@@ -31,10 +31,10 @@ class PantallaPrincipal : AppCompatActivity() {
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
             super.onViewCreated(view, savedInstanceState)
             parent_view = view.findViewById(android.R.id.content)
-            initRecyclerHome()
+            initHome()
         }
 
-        private fun initRecyclerHome(){
+        private fun initHome(){
             libros.add(RecyclerView("El evangelio del mal","sabe","Terror"))
             libros.add(RecyclerView("La sombra","sabe","Crimen"))
             libros.add(RecyclerView("Las cronicas de Narnia","sabe","Fantasia"))
@@ -43,7 +43,7 @@ class PantallaPrincipal : AppCompatActivity() {
             home.layoutManager = LinearLayoutManager(activity)
             home.setHasFixedSize(true)
             adapterHome = activity?.let { home(listLibros, requireActivity()) }
-            recyclerView_Home.adapter = adapterHome
+            home.adapter = adapterHome
         }
     }
 
