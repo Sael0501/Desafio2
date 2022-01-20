@@ -12,13 +12,6 @@ class Registro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro)
 
-        textView6.setOnClickListener{
-            startActivity(Intent(this,Inicio::class.java))
-        }
-        buttonR.setOnClickListener{
-            startActivity(Intent(this,PantallaPrincipal::class.java))
-        }
-
         tietUsuarioR.addTextChangedListener(object: TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }
@@ -82,6 +75,11 @@ class Registro : AppCompatActivity() {
                 }
             }
         })
+
+        buttonR.setOnClickListener{
+
+            startActivity(Intent(this,PantallaPrincipal::class.java))
+        }
 
     }
 }

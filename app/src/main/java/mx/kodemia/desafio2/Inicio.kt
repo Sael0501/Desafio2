@@ -30,6 +30,19 @@ class Inicio : AppCompatActivity() {
         })
 
         buttonLogin.setOnClickListener{
+            val correo: String = tietCorreo.text?.trim().toString()
+            val password: String = tietPassword.text?.trim().toString()
+            if(correo.isEmpty()){
+                tilCorreo.setError("Correo necesario")
+            }else{
+                tilCorreo.setError(null)
+            }
+
+            if(password.isEmpty()){
+                tilPassword.setError("Contraseña necesaria")
+            }else{
+                tilPassword.setError(null)
+            }
             startActivity(Intent(this, Registro::class.java))
         }
 
